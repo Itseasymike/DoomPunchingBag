@@ -1,0 +1,156 @@
+body {
+  background:  url('images/doombackground.png') no-repeat center fixed;
+  background-size: cover;
+  /* background: rgba(0, 0, 0, .7) */
+}
+
+header {
+  text-align: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, .5);
+}
+
+@keyframes glow {
+  0% {opacity: 0;}
+  50%{opacity:1;}
+  100%{opacity:0;}
+}
+#doomhd {
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+  animation-name: glow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+}
+#start-btn {
+  position: absolute;
+  height: 50px;
+  width: 100px;
+  margin-top: 20%;
+  margin-left: 46%;
+  z-index: 100;
+}
+
+#container {
+  display: none;
+  position: relative;
+  background: url("images/doombg.png") center no-repeat ;
+  border-radius: 5px;
+  margin:  0 auto;
+  max-width: 1000px;
+  height: 500px;
+}
+
+#win {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  z-index: 2;
+  display: none;
+  color: gold;
+}
+
+#lose {
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  display: none;
+  color: red;
+  z-index: 100;
+}
+
+#ehealth {
+  position: absolute;
+  z-index: 1;
+  color: red;
+  left: 25%;
+}
+
+ .enemy {
+  background: url('images/enemy.png') no-repeat -7px -233px;
+  position: absolute;
+  top: 30%;
+  margin-left: 40%;
+  width: 150px;
+  height: 216px;
+}
+
+.enemy.phase1 {
+  background-position:  -162px -233px;
+  width: 144px;
+  height: 219px;
+}
+
+.enemy.phase2 {
+  background-position:  -311px -244px;
+  width: 162px;
+  height: 208px;
+}
+
+.enemy.phase3 {
+  background-position:  -465px -244px;
+  width: 168px;
+  height: 205px;
+}
+
+.enemy.phase4 {
+  background-position:  -650px -244px;
+  width: 150px;
+  height: 170px;
+}
+.enemy.phase5 {
+  background: url('images/boss.png') no-repeat -839px -435px;
+  width: 294px;
+  height: 547px;
+  z-index: 150;
+}
+
+#left {
+  position: absolute;
+  width: 15%;
+  top: 70%;
+  left: 25%;
+  transition-timing-function: linear;
+}
+
+#right {
+  position: absolute;
+  width: 15%;
+  top:  70%;
+  left:  60%;
+  transition-timing-function: linear;
+}
+
+ #replay {
+  display: none;
+  position: absolute;
+  top:  80%;
+  left:  45%;
+ }
+
+#btn-right {
+  position: absolute;
+  top:  90%;
+  left:  67%;
+}
+
+#btn-left {
+  position: absolute;
+  top:  90%;
+  left:  25%;
+}
+
+ /* footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  background-color: rgba(0, 0, 0, .5);
+} */
