@@ -2,6 +2,8 @@
 // perspective .rotate z
 (function() {
 
+var song = new Audio ("sounds/doom-song.mp3");
+  song.play();
 //Global Variables
   // var keycodes = event.keycode;
   // var body = $('body');
@@ -180,7 +182,7 @@ $(' #btn-left ').click(function(event) {
 }
 
   $(document).ready(function(){
-    $("<audio autoplay><source src=\"" + song + "\" type=\"audio/mpeg\"></audio>").css('display', 'none').append("body");
+    // $("<audio autoplay><source src=\"" + song + "\" type=\"audio/mpeg\"></audio>").css('display', 'none').append("body");
     myEventListeners();
   })
 
