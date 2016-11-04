@@ -18,6 +18,9 @@ header {
   50%{opacity:1;}
   100%{opacity:0;}
 }
+iframe {
+  display: none;
+}
 #doomhd {
   display: block;
   margin: 0 auto;
@@ -132,6 +135,7 @@ header {
   position: absolute;
   top:  80%;
   left:  45%;
+  z-index: 1700;
  }
 
 #btn-right {

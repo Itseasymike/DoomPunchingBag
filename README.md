@@ -1,1 +1,11 @@
-# DoomPunchingBag
+# Doom Punching Bag
+
+
+# Rules
+
+* Click on the "PUNCH!" buttons or use your handy dandy "left" and "right" arrow keys for maximum performance!
+* Don't wait too long or the Baron wil kill you instantly!
+* Fight the Baron of Hell till he's mush!
+* FISTS ONLY!
+
+# Story

@@ -3,15 +3,18 @@
 (function() {
 
 //Global Variables
+  // var keycodes = event.keycode;
+  // var body = $('body');
   var doAttack;
   var $left = $(' #left');
   var $right = $(' #right');
   var enemyHealth = 150;
   var damage = 10;
   var counter = 0;
+  var scream = ["sounds/scream.mp3"];
 
-var playList = function() {
-  var actions =  [
+  var playList = function() {
+    var actions =  [
     "sounds/gut-punch.mp3",
     "sounds/grunt.mp3",
     "sounds/slap.mp3",
@@ -20,6 +23,7 @@ var playList = function() {
     "sounds/upper-cut.mp3",
     "sounds/woosh.mp3",
   ]
+
  var randomNum = Math.floor(Math.random() * (actions.length));
 
  // Used stack overflow post to figure out how to actually play sounds
@@ -30,14 +34,39 @@ var playList = function() {
 }
 
 
-// TRY OUT SWITCH CASE INSTEAD OF ELSEIF
+// INITIALIZES GAME
 var startGame = function() {
   $(' #container ').css('display', 'block');
   $(' #start-btn ').toggleClass('animated').addClass('fadeOut');
   $(' #ehealth').text(enemyHealth);
 
+//ACTIVATES KEYDOWN PROPERTIES
+  $(document).keydown(function(event) {
+    if (event.keyCode === 39 ) {
+    $(' #right ').animate({'top': '-=140px'}, 50)
+    $(' #right ').animate({'left': '-=40px'}, 50)
+    $(' #right ').animate({'top': '+=140px'}, 50)
+    $(' #right ').animate({'left': '+=40px'}, 50)
+    playList();
+    myAttack();
+  }
+ });
+
+$(document).keydown(function(event) {
+    if ( event.keyCode === 37 ) {
+    $(' #left ').animate({'top': '-=120px'}, 50)
+    $(' #left ').animate({'left': '-=40px'}, 50)
+    $(' #left ').animate({'top': '+=120px'}, 50)
+    $(' #left ').animate({'left': '+=40px'}, 50)
+    playList();
+    myAttack();
+  }
+});
+
 }
 
+//DECREASE ENEMY HEALTH TO ZERO
+//YOU WIN WHEN ENEMY IS DEFEATED
 var myAttack = function() {
 
   $(' #ehealth').text(enemyHealth);
@@ -86,6 +115,8 @@ var myAttack = function() {
     }
   }
 
+// ENEMY ONE HIT KILL AFTER 10 SECS
+// DISPLAYS YOU LOSE
 var oneHitKill = function() {
     doAttack = setTimeout(function(){
       $(' .enemy ').removeClass('phase4');
@@ -97,6 +128,9 @@ var oneHitKill = function() {
       $(' #btn-right').css('display', 'none');
       $(' #container ').first().toggleClass('animated').addClass('shake');
       $(' #lose ').css('display', 'block').toggleClass('animated').addClass('bounceInDown');
+       $(' #replay').css('display', 'block');
+       $("<audio autoplay><source src=\"" + scream + "\" type=\"audio/mpeg\"></audio>").css('display', 'none').append("body");
+      console.log("You lose!");
      }, 10000);
 }
 
@@ -119,10 +153,11 @@ $(' #start-btn ').click(function(event) {
       startGame();
 
 });
-// $( "#target" ).keydown(function() {
+$( "#target" ).keydown(function() {
 
-// });
+});
 
+//ON CLICK ANIMATES RIGHT ARM
 $(' #btn-right ').click(function(event) {
     $(' #right ').animate({'top': '-=140px'}, 50)
     $(' #right ').animate({'left': '-=40px'}, 50)
@@ -131,7 +166,7 @@ $(' #btn-right ').click(function(event) {
       playList();
       myAttack();
   });
-
+//ON CLICK ANIMATES LEFT ARM
 $(' #btn-left ').click(function(event) {
     $(' #left ').animate({'top': '-=120px'}, 50)
     $(' #left ').animate({'left': '-=40px'}, 50)
@@ -140,6 +175,7 @@ $(' #btn-left ').click(function(event) {
       playList();
       myAttack();
   });
+
 }
 
   $(document).ready(function(){
