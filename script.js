@@ -12,6 +12,7 @@
   var damage = 10;
   var counter = 0;
   var scream = ["sounds/scream.mp3"];
+  var song = ["sounds/doom-song.mp3"];
 
   var playList = function() {
     var actions =  [
@@ -179,6 +180,7 @@ $(' #btn-left ').click(function(event) {
 }
 
   $(document).ready(function(){
+    $("<audio autoplay><source src=\"" + song + "\" type=\"audio/mpeg\"></audio>").css('display', 'none').append("body");
     myEventListeners();
   })
 

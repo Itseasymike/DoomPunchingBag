@@ -18,9 +18,9 @@ header {
   50%{opacity:1;}
   100%{opacity:0;}
 }
-iframe {
+/* iframe {
   display: none;
-}
+} */
 #doomhd {
   display: block;
   margin: 0 auto;
