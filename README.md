@@ -21,7 +21,7 @@ In this DOOM remake our hero :godmode: finds himself in the pits of hell with no
 
 ## The Process
 
-* From the get go, I planned on making a fairly simple game which would include the movement images and the change of images on the game screen upon conditions being met. I wanted 
+* From the get go, I planned on making a fairly simple game which would include the movement images and the change of images on the game screen upon conditions being met.
 
 * Wireframes
 
