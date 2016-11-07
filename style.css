@@ -1,16 +1,14 @@
 body {
   background:  url('images/doombackground.png') no-repeat center fixed;
   background-size: cover;
-  /* background: rgba(0, 0, 0, .7) */
 }
-
 header {
   text-align: center;
   left: 0;
   top: 0;
   width: 100%;
   height: 100px;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0);
 }
 
 @keyframes glow {
@@ -18,9 +16,31 @@ header {
   50%{opacity:1;}
   100%{opacity:0;}
 }
-/* iframe {
+
+#play-btn {
+  position: absolute;
+  display: block;
+  top: 2%;
+  left: 90%;
+  opacity: .3;
   display: none;
-} */
+}
+
+#play-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#stop-btn {
+  position: absolute;
+  display: block;
+  top: 2%;
+  left: 90%;
+  opacity: .3;
+}
+#stop-btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
 #doomhd {
   display: block;
   margin: 0 auto;
@@ -51,6 +71,8 @@ header {
 }
 
 #win {
+  font-family: Impact;
+  letter-spacing: 5px;
   position: absolute;
   top: 30%;
   left: 40%;
@@ -60,6 +82,8 @@ header {
 }
 
 #lose {
+  font-family: Impact;
+  letter-spacing: 5px;
   position: absolute;
   top: 15%;
   left: 40%;
@@ -150,11 +174,19 @@ header {
   left:  25%;
 }
 
- /* footer {
+h4 a {
+  font-family: Impact;
+  text-decoration: none;
+  color: red;
+}
+h4 a:hover {
+  color: gold;
+  text-decoration: none;
+}
+  footer {
   position: absolute;
-  left: 0;
+  background: rgba(0,0,0,0);
+  padding: 20px;
   bottom: 0;
-  width: 100%;
-  height: 180px;
-  background-color: rgba(0, 0, 0, .5);
-} */
+  left: 88%;
+}

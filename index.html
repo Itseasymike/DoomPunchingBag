@@ -11,34 +11,21 @@
   <script src="script.js"></script>
 </head>
 <body>
-<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/BSsfjHCFosw/?autoplay=1" frameborder="0" allowfullscreen></iframe> -->
 
-<!-- <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Welcome to your Doom</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav"></ul>
-    </div>
-  </div>
-</nav> -->
+<audio id="player" src="sounds/doom-song.mp3" autoplay loop="true"></audio>
 <header>
   <img id="doomhd" src="images/doomheader.png">
+  <img id="play-btn" src="images/playbutton.png">
+  <img id="stop-btn" src="images/stopbutton.png">
 </header>
 
 <button  id="start-btn" class="btn btn-danger">PLAY</button>
 
 <div id="container">
+
 <h1 id="win">YOU WIN!</h1>
 <h1 id="lose">YOU LOSE!</h1>
+
   <div>
     <p class="enemy" src=""></p>
     <p><h1 id="ehealth"></h1></p>
@@ -57,6 +44,9 @@
     <button id="replay" class="btn btn-success">REPLAY</button>
 </div>
 
-<footer></footer>
+  <footer>
+    <h4><a href="https://twitter.com/Itseasymike" target="_blank">&copy; Itseasymike</a></h4>
+  </footer>
+
 </body>
 </html>
