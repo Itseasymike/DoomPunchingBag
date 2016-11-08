@@ -2,7 +2,7 @@
 
 ## About
 
-In this DOOM remake our hero :godmode: finds himself in the pits of hell with nothing to protect him but his God-given strength. As our hero tries to escape hell and defeat countless demons along the way, he is faced with one of his deadliest enemies, The Baron of Hell. Our hero must now use nothing but his fists to defeat his enemy and finally escape the demons that wish to destroy him and hell itself.
+In this DOOM remake our hero :godmode: finds himself in the pits of hell with nothing to protect him but his God-given strength. As our hero tries to escape hell and defeat countless demons along the way, he is faced with one of his deadliest enemies, The Baron of Hell. Our hero must now use nothing but his fists to defeat his enemy and finally escape the demons that wish to destroy him and hell itself!
 
 ## Rules
 
@@ -11,17 +11,9 @@ In this DOOM remake our hero :godmode: finds himself in the pits of hell with no
 * Don't wait too long though or the Baron wil kill you instantly! :japanese_goblin:
 * FISTS ONLY! :facepunch:
 
-## Tech
-
-* HTML
-* CSS
-* Bootstrap
-* Javascript
-* jQuery
-
 ## The Process
 
-From the get go, I planned on making a fairly simple game which would include the movement of images and the change of images on the game screen upon certain conditions being met.
+From the get go, I planned on making a fairly simple game which would include the movement of images and the change of images on the game screen depending upon certain conditions being met.
 
 ### Pseudocode
 ```
@@ -45,6 +37,14 @@ If you take longer than 10 seconds to depleat the enemy's health to 0 and the en
 
 ### Challanges
 Working with the time contraints and overall project work I was unable to implement other attack features for the enemy other than the one-hit-kill option.
+
+## Tech
+
+* HTML
+* CSS
+* Bootstrap
+* Javascript
+* jQuery
 
 ## DISCLAIMER
 
