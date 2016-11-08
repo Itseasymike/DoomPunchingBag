@@ -15,6 +15,10 @@ In this DOOM remake our hero :godmode: finds himself in the pits of hell with no
 
 From the get go, I planned on making a fairly simple game which would include the movement of images and the change of images on the game screen depending upon certain conditions being met.
 
+### User Story
+As a gamer, I want to be able to have fun and play an interactive game. One that can help me relieve stress in positive way, instead of 
+hurting my manager I can just imagine he is the Baron of Hell. This game fufills my immediate needs.
+
 ### Pseudocode
 ```
 THE MINIMAL VIABLE PRODUCT
