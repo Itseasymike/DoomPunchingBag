@@ -21,14 +21,30 @@ In this DOOM remake our hero :godmode: finds himself in the pits of hell with no
 
 ## The Process
 
-* From the get go, I planned on making a fairly simple game which would include the movement images and the change of images on the game screen upon conditions being met.
+From the get go, I planned on making a fairly simple game which would include the movement of images and the change of images on the game screen upon certain conditions being met.
 
-* Wireframes
+### Pseudocode
+```
+THE MINIMAL VIABLE PRODUCT
+
+In the simplest way my game requires variables that store, enemyHealth = 150 damageDeltByUser = 10
+
+Upon every click of the "PUNCH!" button or keydown of the "left" or "right" arrow keys, the enemys' health will decrease by 10
+
+Decrease the enemyHealth to 0 to win the game
+
+Throughout the fight, if enemyHealth = 'a certain number' change EnemyImage to a more beaten down version of itself
+
+If you take longer than 10 seconds to depleat the enemy's health to 0 and the enemy will deal you a "One Hit Kill", resulting in a loss
+```
+### Wireframe Examples
 
 ![alt tag](http://i.imgur.com/aFB5RyEl.jpg)
 
 ![alt tag](http://i.imgur.com/quZwWJFl.jpg)
 
+### Challanges
+Working with the time contraints given I wasnt able to implement other attack features for the enemy other than the one-hit-kill option.
 
 ## DISCLAIMER
 
