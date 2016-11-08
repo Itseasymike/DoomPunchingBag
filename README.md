@@ -38,13 +38,13 @@ Throughout the fight, if enemyHealth = 'a certain number' change EnemyImage to a
 If you take longer than 10 seconds to depleat the enemy's health to 0 and the enemy will deal you a "One Hit Kill", resulting in a loss
 ```
 ### Wireframe Examples
-
+*Changed idea from a clown punching game to a DOOM monster punching game*
 ![alt tag](http://i.imgur.com/aFB5RyEl.jpg)
 
 ![alt tag](http://i.imgur.com/quZwWJFl.jpg)
 
 ### Challanges
-Working with the time contraints given I wasnt able to implement other attack features for the enemy other than the one-hit-kill option.
+Working with the time contraints and overall project work I was unable to implement other attack features for the enemy other than the one-hit-kill option.
 
 ## DISCLAIMER
 
