@@ -2,51 +2,51 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
   <title>DOOM PUNCHING BAG</title>
-  <link rel="stylesheet" href="animator.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="animator.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <script src="jquery.js"></script>
   <script src="script.js"></script>
 </head>
 <body>
+  <audio autoplay="" id="player" loop="true" src="sounds/doom-song.mp3"></audio>
 
-<audio id="player" src="sounds/doom-song.mp3" autoplay loop="true"></audio>
-<header>
-  <img id="doomhd" src="images/doomheader.png">
-  <img id="play-btn" src="images/playbutton.png">
-  <img id="stop-btn" src="images/stopbutton.png">
-</header>
+  <header>
+    <img id="doomhd" src="images/doomheader.png">
+    <img id="play-btn" src="images/playbutton.png">
+    <img id="stop-btn" src="images/stopbutton.png">
+  </header>
 
-<button  id="start-btn" class="btn btn-danger">PLAY</button>
+  <button class="btn btn-danger" id="start-btn">PLAY</button>
 
-<div id="container">
+  <div id="container">
 
-<h1 id="win">YOU WIN!</h1>
-<h1 id="lose">YOU LOSE!</h1>
+    <h1 id="win">YOU WIN!</h1>
+    <h1 id="lose">YOU LOSE!</h1>
 
-  <div>
-    <p class="enemy" src=""></p>
-    <p><h1 id="ehealth"></h1></p>
-  </div>
+    <div>
+      <p class="enemy"></p>
+      <h1 id="ehealth"></h1>
+      <p></p>
+    </div>
 
-  <div class="left-hand">
+    <div class="left-hand">
     <img id="left" src="images/left.png">
-  </div>
-
-  <div class="right-hand">
+    </div>
+    <div class="right-hand">
     <img id="right" src="images/right.png">
-  </div>
+    </div>
 
-    <button id ="btn-right" class="btn btn-warning">PUNCH!</button>
-    <button id="btn-left" class="btn btn-warning">PUNCH!</button>
-    <button id="replay" class="btn btn-success">REPLAY</button>
-</div>
+    <button class="btn btn-warning" id="btn-right">PUNCH!</button>
+    <button class="btn btn-warning" id="btn-left">PUNCH!</button>
+    <button class="btn btn-success" id="replay">REPLAY</button>
+
+  </div>
 
   <footer>
     <h4><a href="https://twitter.com/Itseasymike" target="_blank">&copy; Itseasymike</a></h4>
   </footer>
-
 </body>
 </html>

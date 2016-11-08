@@ -1,5 +1,5 @@
 body {
-  background:  url('images/doombackground.png') no-repeat center fixed;
+  background: url('images/doombackground.png') no-repeat center fixed;
   background-size: cover;
 }
 header {
@@ -10,13 +10,17 @@ header {
   height: 100px;
   background-color: rgba(0, 0, 0, 0);
 }
-
 @keyframes glow {
-  0% {opacity: 0;}
-  50%{opacity:1;}
-  100%{opacity:0;}
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
 #play-btn {
   position: absolute;
   display: block;
@@ -25,7 +29,6 @@ header {
   opacity: .3;
   display: none;
 }
-
 #play-btn:hover {
   opacity: 1;
   cursor: pointer;
@@ -59,17 +62,15 @@ header {
   margin-left: 46%;
   z-index: 100;
 }
-
 #container {
   display: none;
   position: relative;
-  background: url("images/doombg.png") center no-repeat ;
+  background: url("images/doombg.png") center no-repeat;
   border-radius: 5px;
-  margin:  0 auto;
+  margin: 0 auto;
   max-width: 1000px;
   height: 500px;
 }
-
 #win {
   font-family: Impact;
   letter-spacing: 5px;
@@ -80,7 +81,6 @@ header {
   display: none;
   color: gold;
 }
-
 #lose {
   font-family: Impact;
   letter-spacing: 5px;
@@ -91,15 +91,13 @@ header {
   color: red;
   z-index: 100;
 }
-
 #ehealth {
   position: absolute;
   z-index: 1;
   color: red;
   left: 25%;
 }
-
- .enemy {
+.enemy {
   background: url('images/enemy.png') no-repeat -7px -233px;
   position: absolute;
   top: 30%;
@@ -107,27 +105,23 @@ header {
   width: 150px;
   height: 216px;
 }
-
 .enemy.phase1 {
-  background-position:  -162px -233px;
+  background-position: -162px -233px;
   width: 144px;
   height: 219px;
 }
-
 .enemy.phase2 {
-  background-position:  -311px -244px;
+  background-position: -311px -244px;
   width: 162px;
   height: 208px;
 }
-
 .enemy.phase3 {
-  background-position:  -465px -244px;
+  background-position: -465px -244px;
   width: 168px;
   height: 205px;
 }
-
 .enemy.phase4 {
-  background-position:  -650px -244px;
+  background-position: -650px -244px;
   width: 150px;
   height: 170px;
 }
@@ -137,7 +131,6 @@ header {
   height: 547px;
   z-index: 150;
 }
-
 #left {
   position: absolute;
   width: 15%;
@@ -145,35 +138,30 @@ header {
   left: 25%;
   transition-timing-function: linear;
 }
-
 #right {
   position: absolute;
   width: 15%;
-  top:  70%;
-  left:  60%;
+  top: 70%;
+  left: 60%;
   transition-timing-function: linear;
 }
-
- #replay {
+#replay {
   display: none;
   position: absolute;
-  top:  80%;
-  left:  45%;
+  top: 80%;
+  left: 45%;
   z-index: 1700;
- }
-
+}
 #btn-right {
   position: absolute;
-  top:  90%;
-  left:  67%;
+  top: 90%;
+  left: 67%;
 }
-
 #btn-left {
   position: absolute;
-  top:  90%;
-  left:  25%;
+  top: 90%;
+  left: 25%;
 }
-
 h4 a {
   font-family: Impact;
   text-decoration: none;
@@ -183,9 +171,9 @@ h4 a:hover {
   color: gold;
   text-decoration: none;
 }
-  footer {
+footer {
   position: absolute;
-  background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
   padding: 20px;
   bottom: 0;
   left: 88%;
