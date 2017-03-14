@@ -20,9 +20,7 @@
         // Randomizes sounds made when enemy is hit
         var randomNum = Math.floor(Math.random() * (actions.length));
 
-        // Used stack overflow post to figure out how to actually play sounds
-        // Also how to correctly add the audio elements to the DOM
-        // http://stackoverflow.com/questions/20227266/play-random-sounds-without-repeat
+        // appends audio
         $("<audio autoplay><source src=\"" + actions[randomNum] + "\" type=\"audio/mpeg\"></audio>").css('display', 'none').append("body");
       }
 
