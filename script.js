@@ -8,14 +8,16 @@
     var counter = 0;
     var scream = ["sounds/scream.mp3"];
     var cheer = ["sounds/cheer.mp3"];
+
+    // Sounds function
     var playList = function() {
-    var actions = ["sounds/gut-punch.mp3",
-                   "sounds/grunt.mp3",
-                   "sounds/slap.mp3",
-                   "sounds/super-punch.mp3",
-                   "sounds/thwack.mp3",
-                   "sounds/upper-cut.mp3",
-                   "sounds/woosh.mp3", ]
+      var actions = ["sounds/gut-punch.mp3",
+                     "sounds/grunt.mp3",
+                     "sounds/slap.mp3",
+                     "sounds/super-punch.mp3",
+                     "sounds/thwack.mp3",
+                     "sounds/upper-cut.mp3",
+                     "sounds/woosh.mp3", ]
 
         // Randomizes sounds made when enemy is hit
         var randomNum = Math.floor(Math.random() * (actions.length));
